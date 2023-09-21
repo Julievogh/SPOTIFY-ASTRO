@@ -1,20 +1,21 @@
 ---
 import LogoSpot from "../assets/icons/logo.svg";
+import Button3 from "../components/Button3.astro";
 ---
 
 <nav class="top_left_nav">
   <ul>
     <li><img src="../../src/static/logo.svg" alt="logo" /></li>
-    <li><img src="../../src/static/home-filled.svg" alt=""> Hjem</li>
+    <li class="home_but"><img src="../../src/static/home-filled.svg" alt=""> Hjem</li>
     <li>
-      <img src="../../src/static/search-icon.svg" alt=""> Søg
+       <img src="../../src/static/search-icon.svg" alt=""><Button3 text="Søg" />
     </li>
   </ul>
 </nav>
 
 <style>
   nav {
-    background-color: rgb(32, 34, 34);
+    background-color: rgb(32, 32, 34);
     margin: 0.5rem;
     border-radius: 10px;
     
@@ -32,5 +33,10 @@ import LogoSpot from "../assets/icons/logo.svg";
 
   li {
 
+  }
+
+  .home_but {
+    color: rgb(0, 0, 0);¨
+ 
   }
 </style>

@@ -1,16 +1,18 @@
 ---
-
+import Button from './Button1.astro';
+import Button2 from './Button2.astro';
+import Button3 from './Button3.astro';
 ---
 
 <nav class="top_right_nav">
   <ul>
     <div>
-      <li><button class="left_button"><</button></li>
-      <li><button class="right_button">></button></li>
+      <li><Button2 text="<" /></li>
+      <li><Button2 text=">" /></li>
     </div>
     <div>
-      <li><button>Tilmeld dig</button></li>
-      <li><button>Log på</button></li>
+      <li><Button3 text="Tilmeld dig" /></li>
+      <li><Button text="Log På" /></li>
     </div>
   </ul>
 </nav>
@@ -23,6 +25,8 @@
     position: sticky;
 	top: 0;
 	left: 0;
+  opacity: 70%;
+  
   }
   div {
     display: flex;

@@ -16,6 +16,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Spotify-3'; 
+  src: url('./fonts/GothamBold.ttf') format('woff2'), 
+       url('./fonts/Gotham-Bold.otf') format('woff');
+ 
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
   box-sizing: border-box;
@@ -32,7 +41,7 @@ html {
 }
 
 body {
-  background: rgb(24, 24, 27);
+  background: rgb(0, 0, 0);
   font-family: "Spotify-2", sans-serif;
   font-weight: 400;
   line-height: 1.75;
