@@ -1,0 +1,25 @@
+---
+const { header, text, imgSrc } = Astro.props; 
+---
+
+
+<article>
+  <img src={imgSrc} />
+  <h3>{header}</h3>
+  <p>{text}</p>
+</article>
+
+<style>
+  article {
+    background-color: rgb(41, 41, 43);
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+</style>

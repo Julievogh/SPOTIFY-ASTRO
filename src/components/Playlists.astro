@@ -1,0 +1,49 @@
+---
+import Album from "../components/Album.astro";
+---
+
+
+<section class="playlist_container">
+  <div class="div_tekst">
+    <h1>Spotify-playlister</h1>
+    <h4>Vis alle</h4>
+  </div>
+  <div class="album_row">
+    <Album
+      text="Her kommer en tekst"
+      header="Bongo Bongo"
+      imgSrc="https://picsum.photos/id/65/150/150" />
+  
+    <Album
+      text="Bamses Bedste Sange"
+      header="Halløj"
+      imgSrc="https://picsum.photos/id/66/150/150"
+    />
+    <Album
+      text="Her står noget smukt"
+      header="Sange fra havet"
+      imgSrc="https://picsum.photos/id/67/150/150"
+    />
+    <Album
+      text="Hallo du der!"
+      header="Grimme ord"
+      imgSrc="https://picsum.photos/id/68/150/150"
+    />
+  </div>
+</section>
+
+<style>
+  section {
+    grid-column: 2/3;
+    margin: 1rem;
+  }
+  .div_tekst {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .album_row {
+    display: flex;
+    flex-direction: row;
+  }
+</style>

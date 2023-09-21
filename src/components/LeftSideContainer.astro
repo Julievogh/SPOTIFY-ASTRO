@@ -1,0 +1,39 @@
+---
+import PlaylistOpret from "./PlaylistOpret.astro";
+---
+
+<section class="left_side_container">
+  <div><button>Dit bibliotek</button>
+  <button>"+"</button>
+  <PlaylistOpret />
+  <PlaylistOpret /></div>
+  <div class="bottom_stuff">
+  <a href="">Cookies</a>
+  <button>0 Dansk</button></div>
+</section>
+
+
+<style>
+    section {
+        background-color: rgb(19, 18, 18);
+        margin: 0.5rem;
+       grid-row: 2/4;
+        grid-column: 1/2;
+        border-radius: 10px;
+       
+    }
+
+    .left_side_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .bottom_stuff {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        margin: 1rem;
+        
+    }
+</style>
