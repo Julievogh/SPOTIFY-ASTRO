@@ -8,6 +8,7 @@ import LeftSideContainer from "../components/LeftSideContainer.astro";
 import Footer from "../components/Footer.astro";
 import RightSideContainer from "../components/RightSideContainer.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import ButtonNew from "../components/ButtonNew.astro";
 const { hasSearch } = Astro.props;
 ---
 
@@ -20,9 +21,12 @@ const { hasSearch } = Astro.props;
     <title>Astro</title>
   </head>
   <body>
-    {hasSearch && <input type="text" />}
-       <MainLayout hasSearch={false} title="Search">...</MainLayout>
-      
+    <MainLayout />
+    <ButtonNew hasSearch={true} title="Search">...</MainLayout>
+    
+    <main>
+{hasSearch && <input type="text" />}
+    </main>
   </body>
 </html>
 

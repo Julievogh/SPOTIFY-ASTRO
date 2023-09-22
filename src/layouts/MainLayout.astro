@@ -6,8 +6,8 @@ import Playlists from "../components/Playlists.astro";
 import "../styles/global.css";
 import LeftSideContainer from "../components/LeftSideContainer.astro";
 import Footer from "../components/Footer.astro";
+import ButtonNew from "../components/ButtonNew.astro"
 import RightSideContainer from "../components/RightSideContainer.astro";
-import MainLayout from "../layouts/MainLayout.astro";
 const { hasSearch } = Astro.props;
 ---
 
@@ -19,11 +19,21 @@ const { hasSearch } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
+  
   <body>
-    {hasSearch && <input type="text" />}
-       <MainLayout hasSearch={false} title="Search">...</MainLayout>
+    <main>
       
+      <LeftNav />
+      <LeftSideContainer />
+      
+       
+        
+      
+      <RightSideContainer />
+    </main>
+    <Footer />
   </body>
+  
 </html>
 
 <style>
@@ -32,4 +42,8 @@ const { hasSearch } = Astro.props;
     grid-template-columns: 1fr 2fr;
     min-height: 100vh;
   }
+
+  
+
+
 </style>
