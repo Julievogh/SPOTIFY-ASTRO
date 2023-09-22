@@ -12,23 +12,23 @@ import Button4 from "../components/Button4.astro";
     <Album
       text="Her kommer en tekst"
       header="Bongo Bongo"
-      imgSrc="https://picsum.photos/id/65/150/150"
+      imgSrc="https://picsum.photos/id/125/150/150"
     />
 
     <Album
       text="Bamses Bedste Sange"
       header="Halløj"
-      imgSrc="https://picsum.photos/id/66/150/150"
+      imgSrc="https://picsum.photos/id/122/150/150"
     />
     <Album
       text="Her står noget smukt"
       header="Sange fra havet"
-      imgSrc="https://picsum.photos/id/67/150/150"
+      imgSrc="https://picsum.photos/id/24/150/150"
     />
     <Album
       text="Hallo du der!"
       header="Grimme ord fra en sømand"
-      imgSrc="https://picsum.photos/id/68/150/150"
+      imgSrc="https://picsum.photos/id/234/150/150"
     />
   </div>
 </section>
@@ -53,12 +53,12 @@ import Button4 from "../components/Button4.astro";
     <Album
       text="Dansktop"
       header="Ok Ok og band"
-      imgSrc="https://picsum.photos/id/80/150/150"
+      imgSrc="https://picsum.photos/id/140/150/150"
     />
     <Album
       text="Se hvor sød jeg er!"
       header="Smukke tanker"
-      imgSrc="https://picsum.photos/id/69/150/150"
+      imgSrc="https://picsum.photos/id/169/150/150"
     />
   </div>
 </section>
@@ -76,5 +76,17 @@ import Button4 from "../components/Button4.astro";
   .album_row {
     display: flex;
     flex-direction: row;
+     flex-wrap: wrap; 
+    justify-content: space-between;
+  }
+  }
+
+
+   @media (max-width: 700px) {
+.album_row {
+      justify-content: center; 
+    }
+
+  
   }
 </style>
