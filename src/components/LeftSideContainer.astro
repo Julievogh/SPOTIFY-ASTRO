@@ -3,23 +3,21 @@ import PlaylistOpret from "./PlaylistOpret.astro";
 import Button3 from "../components/Button3.astro";
 import Button2 from "../components/Button2.astro";
 import Button4 from "../components/Button4.astro";
+import Icon from "../components/icon.astro";
 ---
 
 <section class="left_side_container">
   <div class="library_button">
-    <img src="../../src/static/library-icon-filled.svg" alt="" /><Button3
-      text="Dit bibliotek"
-    />
+    <img src="../icons/globe-icon.svg" />
+    <Button3 text="Dit bibliotek" />
     <Button2 text="+" />
     <PlaylistOpret />
   </div>
   <div class="bottom_stuff">
     <a href=""><Button4 text="Cookies" /></a>
-    <div class="globe_but">
-      <img src="../../src/static/globe-icon.svg" />
-      <Button3 text="Dansk" />
-    </div>
+    <div class="globe_but"><Icon icon="globe-icon" /><p>Dansk</p></div>
   </div>
+  <Button3 text="Dansk" />
 </section>
 
 <style>
@@ -52,6 +50,7 @@ import Button4 from "../components/Button4.astro";
     border: solid rgb(225, 225, 228) 1px;
     padding: 0rem;
     border-radius: 12px;
+    display: flex;
   }
   .globe_but img {
     margin-left: 0.4rem;
