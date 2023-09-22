@@ -3,38 +3,43 @@ import Button from "../components/Button1.astro";
 ---
 
 <footer>
-    <div>
-  <h4>EKSEMPEL PÅ SPOTIFY</h4>
-  <p>
-    Tilmeld dig for at få ubegrænsede sange og podcasts med lejlighedsvise
-    reklamer. Du skal ikke bruge kreditkort.
-  </p></div>
+  <div>
+    <h4>EKSEMPEL PÅ SPOTIFY</h4>
+    <p>
+      Tilmeld dig for at få ubegrænsede sange og podcasts med lejlighedsvise
+      reklamer. Du skal ikke bruge kreditkort.
+    </p>
+  </div>
   <div class="button"><Button text="Tilmeld dig gratis" /></div>
 </footer>
 
 <style>
-    footer {
-        background: rgb(193,44,190);
-background: linear-gradient(90deg, rgba(193,44,190,1) 0%, rgba(121,56,228,1) 44%, rgba(69,161,223,1) 100%);
+  footer {
+    background: rgb(193, 44, 190);
+    background: linear-gradient(
+      90deg,
+      rgba(193, 44, 190, 1) 0%,
+      rgba(121, 56, 228, 1) 44%,
+      rgba(69, 161, 223, 1) 100%
+    );
     margin: 0rem;
     display: flex;
     justify-content: space-between;
     position: sticky;
     bottom: 0;
     left: 0;
-    width: 100%; 
-    padding: 0px; 
-    border-radius:6px
-}
+    width: 100%;
+    padding: 0px;
+    border-radius: 6px;
+  }
 
-    p, h4 {
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-.button {
+  p,
+  h4 {
+    margin-left: 20px;
+    margin-top: 14px;
+  }
+  .button {
     margin-top: 25px;
     margin-right: 40px;
-    
-}
-   
+  }
 </style>

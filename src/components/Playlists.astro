@@ -3,7 +3,6 @@ import Album from "../components/Album.astro";
 import Button4 from "../components/Button4.astro";
 ---
 
-
 <section class="playlist_container">
   <div class="div_tekst">
     <h1>Spotify-playlister</h1>
@@ -13,8 +12,9 @@ import Button4 from "../components/Button4.astro";
     <Album
       text="Her kommer en tekst"
       header="Bongo Bongo"
-      imgSrc="https://picsum.photos/id/65/150/150" />
-  
+      imgSrc="https://picsum.photos/id/65/150/150"
+    />
+
     <Album
       text="Bamses Bedste Sange"
       header="Halløj"
@@ -27,8 +27,38 @@ import Button4 from "../components/Button4.astro";
     />
     <Album
       text="Hallo du der!"
-      header="Grimme ord"
+      header="Grimme ord fra en sømand"
       imgSrc="https://picsum.photos/id/68/150/150"
+    />
+  </div>
+</section>
+
+<section class="playlist_container2">
+  <div class="div_tekst">
+    <h1>Spotify-playlister</h1>
+    <Button4 text="Vis alle" />
+  </div>
+  <div class="album_row">
+    <Album
+      text="Upsi, den kom i min smoothie!"
+      header="Nej tak til selleri"
+      imgSrc="https://picsum.photos/id/78/150/150"
+    />
+
+    <Album
+      text="Ej, vel?"
+      header="Medina"
+      imgSrc="https://picsum.photos/id/89/150/150"
+    />
+    <Album
+      text="Dansktop"
+      header="Ok Ok og band"
+      imgSrc="https://picsum.photos/id/80/150/150"
+    />
+    <Album
+      text="Se hvor sød jeg er!"
+      header="Smukke tanker"
+      imgSrc="https://picsum.photos/id/69/150/150"
     />
   </div>
 </section>

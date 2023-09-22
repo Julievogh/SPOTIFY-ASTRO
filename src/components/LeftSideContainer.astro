@@ -12,18 +12,20 @@ import Button4 from "../components/Button4.astro";
     />
     <Button2 text="+" />
     <PlaylistOpret />
-    <PlaylistOpret />
   </div>
   <div class="bottom_stuff">
     <a href=""><Button4 text="Cookies" /></a>
-   <div class="globe_but"> <img src="../../src/static/globe-icon.svg"> <Button3 text="Dansk" /> </div>
+    <div class="globe_but">
+      <img src="../../src/static/globe-icon.svg" />
+      <Button3 text="Dansk" />
+    </div>
   </div>
 </section>
 
 <style>
   section {
     background-color: rgb(19, 18, 18);
-    margin: 0.5rem;
+    margin: 0.4rem 0.1rem;
     grid-row: 2/4;
     grid-column: 1/2;
     border-radius: 10px;
@@ -47,8 +49,15 @@ import Button4 from "../components/Button4.astro";
   }
 
   .globe_but {
-    border: solid black 1px;
-    padding: 0.2rem;
+    border: solid rgb(225, 225, 228) 1px;
+    padding: 0rem;
     border-radius: 12px;
+  }
+  .globe_but img {
+    margin-left: 0.4rem;
+  }
+
+  img {
+    filter: invert(1);
   }
 </style>

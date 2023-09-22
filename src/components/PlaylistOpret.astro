@@ -1,19 +1,32 @@
 ---
 import Button from "../components/Button1.astro";
+import Button5 from "../components/Button5.astro";
 ---
 
 <article>
   <h3>Opret din første playliste</h3>
   <p>Det er nemt - vi skal nok hjælpe dig</p>
-  <Button text="Opret playliste" />
+  <Button5 text="Opret playliste" class="button5" />
+</article>
+<article>
+  <h3>Lad os finde nogle podcasts, du kan følge</h3>
+  <p>Vi holder dig orienteret om nye episoder</p>
+  <Button5 text="Udforsk podcasts" class="button5" />
 </article>
 
-
 <style>
-article {
-  background-color: rgb(38, 40, 41);
-  margin: 1rem;
-  padding: 0.5rem 1.5rem 1rem 1rem;
-  border-radius: 12px;
-}
+  article {
+    background-color: rgb(38, 40, 41);
+    margin: 1rem 1.5rem 1rem 0;
+
+    border-radius: 12px;
+  }
+
+  h3 {
+    padding: 0.8rem 0.8rem 0 0.8rem;
+  }
+
+  p {
+    padding: 0 0.8rem 0 0.8rem;
+  }
 </style>

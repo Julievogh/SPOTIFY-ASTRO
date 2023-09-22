@@ -1,40 +1,37 @@
 @font-face {
-  font-family: 'Spotify'; 
-  src: url('./fonts/Gotham-black.ttf') format('woff2'), 
-       url('./fonts/Gotham-Black.otf') format('woff');
+  font-family: "Spotify";
+  src: url("./fonts/Gotham-black.ttf") format("woff2"),
+    url("./fonts/Gotham-Black.otf") format("woff");
 
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Spotify-2'; 
-  src: url('./fonts/GothamLight.ttf') format('woff2'), 
-       url('./fonts/Gotham-Light.otf') format('woff');
- 
+  font-family: "Spotify-2";
+  src: url("./fonts/GothamLight.ttf") format("woff2"),
+    url("./fonts/Gotham-Light.otf") format("woff");
+
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Spotify-3'; 
-  src: url('./fonts/GothamBold.ttf') format('woff2'), 
-       url('./fonts/Gotham-Bold.otf') format('woff');
- 
+  font-family: "Spotify-3";
+  src: url("./fonts/GothamBold.ttf") format("woff2"),
+    url("./fonts/Gotham-Bold.otf") format("woff");
+
   font-weight: normal;
   font-style: normal;
 }
-
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Spotify', sans-serif;
+  font-family: "Spotify", sans-serif;
 }
-
-
 
 html {
   font-size: 100%;
@@ -65,7 +62,7 @@ h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 1.802rem;
+  font-size: 1.3rem;
 }
 
 h2 {
