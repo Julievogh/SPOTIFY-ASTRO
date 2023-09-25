@@ -1,14 +1,16 @@
 ---
 import LogoSpot from "../assets/icons/logo.svg";
 import Button3 from "../components/Button3.astro";
+import Icon from "../components/icon.astro";
+
 ---
 
 <nav class="top_left_nav">
   <ul>
-    <li><img src="../../src/static/logo.svg" alt="logo" /></li>
-    <li class="home_but"><a href="/"><img src="../../src/static/home-filled.svg" alt=""><Button3 text="Hjem" /> </a></li>
+    <li><Icon icon="logo"  /></li>
+    <li class="home_but"><a href="/"><Icon icon="home-filled" /><Button3 text="Hjem" /> </a></li>
    <li> <a href="/search">
-       <img src="../../src/static/search-icon.svg" alt=""><Button3 text="Søg" /></a>
+       <Icon icon="search-filled" /><Button3 text="Søg" /></a>
     </li>
   </ul>
 </nav>
